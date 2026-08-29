@@ -1,0 +1,43 @@
+{
+  "observed_at": "2026-08-29T20:10:00Z",
+  "snapshot": {
+    "generated_at": "2026-08-29T20:09:30Z",
+    "source": {
+      "kind": "canonical_projection",
+      "url": "https://api.agentbounties.app/v1/base/autonomous-bounties/feed",
+      "available": false,
+      "degraded": true,
+      "degradation_reason": "canonical feed timeout",
+      "safe_block": null
+    },
+    "items": [
+      {
+        "bounty_id": "0x11",
+        "status": "claimable",
+        "work_state": "claimable",
+        "verification_ready": true,
+        "terms_valid": true
+      },
+      {
+        "bounty_id": "0x12",
+        "status": "claimed",
+        "work_state": "in_progress",
+        "verification_ready": true
+      },
+      {
+        "bounty_id": "0x13",
+        "status": "paid",
+        "payment_state": "paid"
+      }
+    ]
+  },
+  "expected": {
+    "ready_to_earn": 0,
+    "in_progress": 1,
+    "submitted": 0,
+    "paid": 1,
+    "verification_unavailable": 1,
+    "stale": false,
+    "source_degraded": true
+  }
+}

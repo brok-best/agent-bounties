@@ -1,0 +1,70 @@
+{
+  "observed_at": "2026-08-29T20:10:00Z",
+  "snapshot": {
+    "generated_at": "2026-08-29T20:09:30Z",
+    "source": {
+      "kind": "canonical_projection",
+      "url": "https://api.agentbounties.app/v1/base/autonomous-bounties/feed",
+      "available": true,
+      "degraded": false,
+      "safe_block": 50616349
+    },
+    "items": [
+      {
+        "bounty_id": "0x01",
+        "status": "claimable",
+        "work_state": "claimable",
+        "verification_ready": true,
+        "terms_valid": true
+      },
+      {
+        "bounty_id": "0x02",
+        "status": "claimable",
+        "work_state": "claimable",
+        "verification_ready": true,
+        "terms_valid": true
+      },
+      {
+        "bounty_id": "0x03",
+        "status": "claimed",
+        "work_state": "in_progress",
+        "verification_ready": true
+      },
+      {
+        "bounty_id": "0x04",
+        "status": "submitted",
+        "work_state": "submitted",
+        "verification_ready": true
+      },
+      {
+        "bounty_id": "0x05",
+        "status": "paid",
+        "work_state": "completed",
+        "payment_state": "paid"
+      },
+      {
+        "bounty_id": "0x06",
+        "status": "claimable",
+        "work_state": "claimable",
+        "verification_ready": false,
+        "terms_valid": true
+      },
+      {
+        "bounty_id": "0x07",
+        "status": "claimable",
+        "work_state": "claimable",
+        "verification_ready": true,
+        "terms_valid": false
+      }
+    ]
+  },
+  "expected": {
+    "ready_to_earn": 2,
+    "in_progress": 1,
+    "submitted": 1,
+    "paid": 1,
+    "verification_unavailable": 2,
+    "stale": false,
+    "source_degraded": false
+  }
+}
